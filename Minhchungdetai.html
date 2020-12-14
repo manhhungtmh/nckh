@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | File Manager</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="img/profile_small.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">Nguyễn Đức Tuấn</span>
+                                <span class="text-muted text-xs block">Thông tin cá nhân <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Thông tin cá nhân</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="TaoKhoa.html">Khóa riêng tư</a></li>
+                                <li><a class="dropdown-item" href="login.html">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            NCKH - HOU
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Trang chủ</span></a>
+                    </li>
+                    <!--                     <li>
+                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+                    </li> -->
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Quản lý danh sách</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="DanhsachCanBo.html">Danh sách cán bộ</a></li>
+                            <li><a href="DanhsachSinhvien.html">Danh sách sinh viên</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Quản lý hoạt động NCKH</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="DanhsachhoatdongNCKH.html">Danh sách hoạt động NCKH</a></li>
+                            <li><a href="DanhsachminhchungNCKH.html">Danh sách minh chứng NCKH</a></li>
+                            <li><a href="Danhsachdetai.html">Danh sách đề tài</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Quản lý danh mục</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="Danhmucdonvi.html">Danh mục đơn vị</a></li>
+                            <li><a href="Danhmucloaicanbo.html">Danh mục loại cán bộ</a></li>
+                            <li><a href="Danhmuccapdonghiencuu.html">Danh mục cấp độ nghiên cứu</a></li>
+                            <li><a href="Danhmucgiaithuong.html">Danh mục giải thưởng</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Quản lý đề tài</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="DangkydetaiNCKH.html">Đăng ký đề tài NCKH</a></li>
+                            <li><a href="Thongtindetai.html">Thông tin đề tài</a></li>
+                            <li><a href="Minhchungdetai.html">Minh chứng đề tài</a></li>
+                            <li><a href="Ketquadetai.html">Kết quả đánh giá đề tài</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Hệ thống quản lý minh chứng Nghiên cứu khoa học - Trường Đại học Mở Hà Nội</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="float-right">26 tiếng trước</small>
+                                            <strong>Trần Mạnh Hùng</strong> đã tải minh chứng lên. <br>
+                                            <small class="text-muted">1 ngày trước vào lúc 7:58 - 12/12/2020</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right text-navy">5 tiếng trước</small>
+                                            <strong>Trịnh Thị Xuân</strong> đã bình luận về đề tài. <br>
+                                            <small class="text-muted">Hôm qua lúc 1:21 - 11/12.2020</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right">23 tiếng trước</small>
+                                            <strong>Thái Thanh Tùng</strong> đã bình luận về đề tài. <br>
+                                            <small class="text-muted">2 ngày trước lúc 12:30 - 12/12/2020</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html" class="dropdown-item">
+                                            <i class="fa fa-envelope"></i> <strong>Xem tất cả hoạt động</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-9">
+                    <h2>Minh chứng NCKH</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Quản lý đề tài</a>
+                        </li>
+
+                        <li class="breadcrumb-item active">
+                            <strong>Minh chứng NCKH</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-content">
+                                <div class="file-manager">
+                                    <h5>Hiển thị:</h5>
+                                    <a href="#" class="file-control active">Tất cả</a>
+                                    <a href="#" class="file-control">Báo cáo</a>
+                                    <a href="#" class="file-control">Âm thanh</a>
+                                    <a href="#" class="file-control">Hình ảnh</a>
+                                    <div class="hr-line-dashed"></div>
+                                    <button class="btn btn-primary btn-block">Chọn file tải lên</button>
+                                    <div class="hr-line-dashed"></div>
+                                    <h5>Thư mục</h5>
+                                    <ul class="folder-list" style="padding: 0">
+                                        <li><a href=""><i class="fa fa-folder"></i> Báo cáo</a></li>
+                                        <li><a href=""><i class="fa fa-folder"></i> Hình ảnh</a></li>
+                                        <li><a href=""><i class="fa fa-folder"></i> Video</a></li>
+                                        <li><a href=""><i class="fa fa-folder"></i> Âm thanh</a></li>
+                                        <li><a href=""><i class="fa fa-folder"></i> Tài liệu tham khảo</a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 animated fadeInRight">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="file-box">
+                                    <div class="file">
+                                        <a href="#">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-file"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Document_2014.doc
+                                                <br />
+                                                <small>Added: Jan 11, 2014</small>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="file-box">
+                                    <div class="file">
+                                        <a href="#">
+                                            <span class="corner"></span>
+
+                                            <div class="image">
+                                                <img alt="image" class="img-fluid" src="img/p2.jpg">
+                                            </div>
+                                            <div class="file-name">
+                                                My feel.png
+                                                <br />
+                                                <small>Added: Jan 7, 2014</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="file-box">
+                                    <div class="file">
+                                        <a href="#">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-music"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Michal Jackson.mp3
+                                                <br />
+                                                <small>Added: Jan 22, 2014</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="file-box">
+                                    <div class="file">
+                                        <a href="#">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="img-fluid fa fa-film"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Monica's birthday.mpg4
+                                                <br />
+                                                <small>Added: Fab 18, 2014</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="file-box">
+                                    <a href="#">
+                                        <div class="file">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-bar-chart-o"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Annual report 2014.xls
+                                                <br />
+                                                <small>Added: Fab 22, 2014</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="file-box">
+                                    <div class="file">
+                                        <a href="#">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-file"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Document_2014.docx
+                                                <br />
+                                                <small>Added: Jan 11, 2014</small>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="file-box">
+                                    <a href="#">
+                                        <div class="file">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-bar-chart-o"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Annual report 2014.xls
+                                                <br />
+                                                <small>Added: Fab 22, 2014</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="file-box">
+                                    <div class="file">
+                                        <a href="#">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-file"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Document_2014.docx
+                                                <br />
+                                                <small>Added: Jan 11, 2014</small>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="file-box">
+                                    <a href="#">
+                                        <div class="file">
+                                            <span class="corner"></span>
+
+                                            <div class="icon">
+                                                <i class="fa fa-bar-chart-o"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                Annual report 2014.xls
+                                                <br />
+                                                <small>Added: Fab 22, 2014</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                    Đề tài Nghiên cứu Khoa học - <b>TS. Nguyễn Đức Tuấn</b>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2014-2018
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+</body>
+
+</html>
